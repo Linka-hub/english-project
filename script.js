@@ -72,7 +72,7 @@ myForm.addEventListener("submit", function(event) {
     formContainer.classList.add("fade-out");  
     
     setTimeout(function() {
-        window.location.href = "validasi/indexresto.html"; 
+        window.location.href = "indexresto.html", "_blank";
     }, 1500);
   } else {
     statusText.textContent = "Password Is Invalid!";

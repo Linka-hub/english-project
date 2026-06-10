@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="pamulang.ico">
+    <title>Password Validation</title>
+</head>
+
+<body>
+
+<div class="card" id="formContainer">
+  <h3>Password Validation</h3>
+
+  <form id="myForm">
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required placeholder="Enter username">
+
+    <label for="psw">Password</label>
+    <div class="input-wrapper">
+        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="Enter password">
+        <span class="toggle-password" id="toggleBtn">🙈</span>
+    </div>
+    
+    <input type="submit" id="submitBtn" value="Validate Password">
+  </form>
+
+  <div id="message">
+    <div id="status-text" class="status-msg"></div>
+    <ul class="validation-list">
+      <li id="letter" class="invalid">Contains both <b>Uppercase</b> and <b>lowercase</b> letters</li>
+      <li id="capital" class="invalid" style="display: none;"></li> <li id="number" class="invalid">Contains at least one <b>number</b></li>
+      <li id="length" class="invalid">At least <b>8 characters</b> long</li>
+    </ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

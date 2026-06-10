@@ -1,6 +1,7 @@
 /// Hello Guys This is We simple project about Password Validation \\\
 
-## Group 3
+# Group 3
+
 -Christo
 -Eldrick
 -Emanuela
